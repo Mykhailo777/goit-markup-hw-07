@@ -311,13 +311,11 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
-
   border-radius: 4px;
-
-  background-color: var(--secondary-bg-color);
+ background-color: var(--secondary-bg-color);
 }
 
 .features-set__title {
