@@ -1,0 +1,212 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $bg-color-dark;
+}
+
+.footer-container {
+  @extend %container;
+  display: flex;
+
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.address-container {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  color: $white-color;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.address-set {
+  @extend %list;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address-set__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-set__location {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: $white-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-set__link {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: none;
+
+  color: $footer-tx-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--active:hover,
+  &--active:focus {
+    color: $accent-color;
+  }
+}
+
+/* -----------------------Social networks-------------------------- */
+
+.footer-networks {
+  padding-top: 12px;
+  max-height: 80px;
+  width: 206px;
+  height: 44px;
+}
+
+.footer-networks__appeal {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+
+.networks-set {
+  @extend %list;
+  display: flex;
+  width: 206px;
+}
+
+.networks-set__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.networks-set__link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.networks-set__icon {
+  fill: $white-color;
+}
+
+/* -----------------------------Footer form------------------------------ */
+
+.form-container {
+  display: flex;
+  position: relative;
+  margin-left: 93px;
+  padding: 0;
+  width: 570px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form__appeal {
+  position: absolute;
+  top: 12px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+
+.footer-form__input {
+  @extend %input;
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px 15px 16px;
+  margin-right: 12px;
+
+  background-color: var(--primery-bg-color);
+
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $footer-tx-color;
+
+  &:focus {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $footer-tx-color;
+  }
+}
+
+.footer-button {
+  @extend %button;
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 29px;
+
+  color: $white-color;
+  background-color: $accent-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $color-focused;
+  }
+}
+
+.footer-button__icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 13px 28px 13px 0;
+}
